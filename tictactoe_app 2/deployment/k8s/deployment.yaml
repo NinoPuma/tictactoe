@@ -2,8 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mi-app
-  namespace: despliegue-k8s-proyecto-nspc
-
+  namespace: namespace2
 spec:
   replicas: 1
   selector:
@@ -16,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mi-app
-        image: img-proyecto-prueba3  
+        image: nuevaimagen
         imagePullPolicy: Never
         ports:
         - containerPort: 3000  

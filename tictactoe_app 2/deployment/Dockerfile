@@ -15,11 +15,12 @@ COPY . .
 RUN npm run build
 
 
-#puerto de la aplicacion
-EXPOSE 3000
+#puerto de la aplicacion antes estaba en el 3000
+EXPOSE 4173
 
 #comando iniciar aplicacion
-CMD [ "npm", "start" ]
+#CMD [ "npm", "start" ]
+CMD ["npm", "start", "--", "--host"]
  
 
  
