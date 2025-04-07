@@ -10,5 +10,4 @@ spec:
     - protocol: TCP
       port: 80          # Puerto del servicio dentro del clúster
       targetPort: 80    # Puerto dentro del contenedor
-      nodePort: 30080   # Puerto en tu host (Minikube) para acceder desde localhost
-  type: NodePort
+  type: ClusterIP
